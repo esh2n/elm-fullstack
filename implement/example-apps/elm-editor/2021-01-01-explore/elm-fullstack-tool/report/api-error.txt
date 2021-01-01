@@ -1,0 +1,24 @@
+Exception in volatile host:
+System.AggregateException: One or more errors occurred. (The type initializer for 'LibGit2Sharp.Core.NativeMethods' threw an exception.)
+ ---> System.TypeInitializationException: The type initializer for 'LibGit2Sharp.Core.NativeMethods' threw an exception.
+ ---> System.DllNotFoundException: Unable to load shared library 'git2-106a5f2' or one of its dependencies. In order to help diagnose loading problems, consider setting the LD_DEBUG environment variable: libgit2-106a5f2: cannot open shared object file: No such file or directory
+   at LibGit2Sharp.Core.NativeMethods.git_libgit2_init()
+   at LibGit2Sharp.Core.NativeMethods.InitializeNativeLibrary()
+   at LibGit2Sharp.Core.NativeMethods..cctor()
+   --- End of inner exception stack trace ---
+   at LibGit2Sharp.Core.NativeMethods.git_clone(git_repository*& repo, String origin_url, FilePath workdir_path, GitCloneOptions& opts)
+   at LibGit2Sharp.Core.Proxy.git_clone(String url, String workdir, GitCloneOptions& opts)
+   at LibGit2Sharp.Repository.Clone(String sourceUrl, String workdirPath, CloneOptions options)
+   at Kalmit.LoadFromGithub.LoadFromUrl(String sourceUrl) in /app/PersistentProcess/PersistentProcess.Common/LoadFromGithub.cs:line 109
+   at Kalmit.LoadFromPath.LoadTreeFromPath(String path) in /app/PersistentProcess/PersistentProcess.Common/LoadFromPath.cs:line 11
+   at Submission#0.GetResponseFromRequest(RequestStructure request)
+   at Submission#0.GetSerialResponseFromSerialRequest(String serializedRequest)
+   at Submission#0.InterfaceToHost_Request(String request)
+   at Submission#3.<<Initialize>>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.CodeAnalysis.Scripting.ScriptExecutionState.RunSubmissionsAsync[TResult](ImmutableArray`1 precedingExecutors, Func`2 currentExecutor, StrongBox`1 exceptionHolderOpt, Func`2 catchExceptionOpt, CancellationToken cancellationToken)
+   at Microsoft.CodeAnalysis.Scripting.Script`1.RunSubmissionsAsync(ScriptExecutionState executionState, ImmutableArray`1 precedingExecutors, Func`2 currentExecutor, Func`2 catchExceptionOpt, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at Kalmit.VolatileHost.RunScript(String script) in /app/PersistentProcess/PersistentProcess.Common/VolatileHost.cs:line 51

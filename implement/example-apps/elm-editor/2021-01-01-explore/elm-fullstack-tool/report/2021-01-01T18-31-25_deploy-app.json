@@ -1,0 +1,31 @@
+{
+  "initElmAppState": true,
+  "site": "http://localhost:4000",
+  "beginTime": "2021-01-01T18-30-56",
+  "sourcePath": ".",
+  "sourceCompositionId": "0da3a471c8e6905cfa95a72e7eeb466e1d267ad953fae4add342f17765bd3fb7",
+  "sourceSummary": {
+    "numberOfFiles": 119,
+    "totalSizeOfFilesContents": 6140614
+  },
+  "filteredSourceCompositionId": "5e8d883b0e39deedaa579f896749c9a5ef7d2d70081435c21d8d06d53e2b5c79",
+  "responseFromServer": {
+    "statusCode": 200,
+    "body": {
+      "beginTime": "2021-01-01T18-31-02",
+      "parentCompositionHashBase16": "57622fe4eb870b464c166df041385e45a3915038d61325c34bbf08cbbdd9c627",
+      "compositionEvent": {
+        "DeployAppConfigAndInitElmAppState": {
+          "HashBase16": "5e8d883b0e39deedaa579f896749c9a5ef7d2d70081435c21d8d06d53e2b5c79"
+        }
+      },
+      "totalTimeSpentMilli": 15913,
+      "result": {
+        "Err": null,
+        "Ok": "Successfully applied this composition event to the process."
+      }
+    }
+  },
+  "deployException": null,
+  "totalTimeSpentMilli": 29103
+}
