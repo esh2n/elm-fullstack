@@ -29,8 +29,6 @@ jobs:
     - name: Clean package cache as a temporary workaround for https://github.com/actions/setup-dotnet/issues/155
       run: dotnet clean ./implement/test-elm-fullstack/test-elm-fullstack.csproj && dotnet nuget locals all --clear
 
-    - name: Run tests
-      run: dotnet test ./implement/test-elm-fullstack/test-elm-fullstack.csproj --logger trx
     - name: dotnet publish
       env:
         PUBLISH_RUNTIME_ID: ${{ matrix.publish-runtime-id }}
