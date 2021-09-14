@@ -1,0 +1,46 @@
+{
+  "engineVersion": "2021-09-14",
+  "beginTime": "2021-09-14T17-38-10",
+  "sourcePath": "https://github.com/elm-fullstack/elm-fullstack/tree/main/implement/example-apps/demo-backend-state",
+  "sourceCompositionId": "344b41834e1d6049abde6e5b5b4e3f7c745f19803d880a39762ef146a21a376f",
+  "sourceSummary": {
+    "numberOfFiles": 10,
+    "totalSizeOfFilesContents": 21538
+  },
+  "compilationIterationsReports": [
+    {
+      "compilation": {
+        "serializeTimeSpentMilli": 8,
+        "prepareJsEngineTimeSpentMilli": 5127,
+        "inJsEngineTimeSpentMilli": 670,
+        "deserializeTimeSpentMilli": 22,
+        "totalTimeSpentMilli": 5830
+      },
+      "dependenciesReports": [
+        {
+          "report": {
+            "dependencyKeySummary": "ElmMake"
+          },
+          "totalTimeSpentMilli": 2248
+        }
+      ],
+      "totalTimeSpentMilli": 8087
+    },
+    {
+      "compilation": {
+        "serializeTimeSpentMilli": 6,
+        "prepareJsEngineTimeSpentMilli": 1,
+        "inJsEngineTimeSpentMilli": 1217,
+        "deserializeTimeSpentMilli": 7,
+        "totalTimeSpentMilli": 1232
+      },
+      "dependenciesReports": null,
+      "totalTimeSpentMilli": 1232
+    }
+  ],
+  "compilationErrors": null,
+  "compilationException": null,
+  "compilationTimeSpentMilli": 9394,
+  "compiledCompositionId": "55360020de890d45f908ccdf4c9656be83b0a488db47cdaa7bde1c79c3531626",
+  "totalTimeSpentMilli": 11121
+}
