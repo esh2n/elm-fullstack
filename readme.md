@@ -47,7 +47,7 @@ As we can see in the [workflow file](./.github/workflows/test-and-publish.yml), 
 ### Rich Chat Room
 
 The [rich chat room example app](https://github.com/elm-fullstack/elm-fullstack/tree/main/implement/example-apps/rich-chat-room) demonstrates features typically found in a chat app, such as user names, message rate-limiting, sound effects, etc.
-For a detailed description of this app, see the readme file at https://github.com/elm-fullstack/elm-fullstack/blob/main/implement/example-apps/rich-chat-room/readme.md
+For a detailed description of this app, [see its readme file](https://github.com/elm-fullstack/elm-fullstack/blob/main/implement/example-apps/rich-chat-room/README.md).
 
 ### Elm Editor
 
@@ -59,4 +59,4 @@ For a detailed description of this app, see the readme file at https://github.co
 
 To see Elm Editor in action, check out the public instance at https://elm-editor.com
 
-To learn more about how it works, see https://github.com/elm-fullstack/elm-fullstack/tree/main/implement/example-apps/elm-editor/readme.md
+To learn more about how it works, see [the its readme file](https://github.com/elm-time/elm-time/blob/main/implement/example-apps/elm-editor/README.md).
